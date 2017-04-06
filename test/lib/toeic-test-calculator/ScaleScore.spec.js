@@ -1,6 +1,6 @@
 'use strict';
 
-var ScaleScore = require('../../../lib/toeic-test-calculator/scaled_score.js');
+var ScaleScore = require('../../../lib/toeic-test-calculator/scale_score.js');
 
 var sandbox = sinon.sandbox.create();
 var scaledscore;
@@ -11,13 +11,6 @@ function teardown() {
 
 describe('ScaleScore', function() {
   before(function() {
-    Observee.prototype = {
-      relay: ['relay:event'],
-      broadcast: ['broadcast:event'],
-      transpose: {'onTransposeEvent': 'transpose:event' },
-    }
-    Observable.call(Observee.prototype);
-    observee = new Observee();
   });
   after(teardown);
 

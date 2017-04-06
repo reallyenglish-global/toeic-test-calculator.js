@@ -4,10 +4,8 @@ var build = {
     entries: [
       './lib/toeic-test-calculator'
     ],
-    standalone: 'TOEICScoreCalcultor',
-    noParse: [
-      'underscore',
-    ]
+    standalone: 'TOEICTestCalcultor',
+    noParse: []
   }
 };
 
