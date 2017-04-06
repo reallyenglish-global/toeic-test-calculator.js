@@ -3,7 +3,6 @@
 var ScaleScore = require('../../../lib/toeic-test-calculator/scale_score.js');
 
 var sandbox = sinon.sandbox.create();
-var scaledscore;
 
 function teardown() {
   sandbox.restore();
@@ -15,37 +14,6 @@ describe('ScaleScore', function() {
   after(teardown);
 
   describe('scaled_score', function() {
-    var subject;
-    before(function() {
-      subject = new ScaleScore();
-    });
-
-    after(teardown);
-    it('relays to observers', function() {
-       expect(subject.onRelayEvent).to.be.calledWith('foo');
-    });
   });
-
-  describe('for', function() {
-    var subject;
-    before(function() {
-    });
-
-    after(teardown);
-    it('broadcasts with prepended inspect', function() {
-       //expect(subject.onBroadcastEvent).to.be.calledWith('bob', 'foo');
-    });
-  });
-
-  describe('min_scaled_score', function() {
-    before(function() {
-    });
-
-    after(teardown);
-    it('broadcasts with only the observee inspection', function() {
-       //expect(observee.trigger).to.be.calledWith('transpose:event', 'transpose args');
-    });
-  });
-
 });
 
