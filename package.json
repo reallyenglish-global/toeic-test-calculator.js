@@ -1,11 +1,11 @@
 {
-  "name": "toeic_test_calculator-js",
+  "name": "toeic-test-calculator.js",
   "main": "lib/toeic-test-calculator",
   "version": "v0.1.1",
   "description": "Takes a TOEIC Test percentage an converts it into a TOEIC Test score for reading an listening tests.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reallyenglish/toeic_test_calculator.js"
+    "url": "https://github.com/reallyenglish/toeic-test-calculator.js"
   },
   "license": "UNLICENSED",
   "devDependencies": {
