@@ -19,9 +19,10 @@ describe('LinearScaleScore', function() {
 
   describe('.calculate', function() {
     it('raise an error if score is outside the range', function() {
-      subject = new LinearScaleScore(1, opts);
-      expect(subject.calculate()).to.be.eql(h);
+      var fn = function() { new LinearScaleScore(1, opts);};
+      expect(fn).to.throw('Score is outside of range for linear scale');
     });
+
     it('returns the correct score for percentages within range', function() {
       expect((new LinearScaleScore(3, opts)).calculate()).to.be.eql(1);
       expect((new LinearScaleScore(4, opts)).calculate()).to.be.eql(6);

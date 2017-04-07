@@ -20,7 +20,7 @@ describe('LinearScaleScore', function() {
   describe('#new', function() {
     describe('score', function() {
       it('is rounded to the nearest 5', function() {
-        roundings = [
+        var rational, score, roundings = [
           [7.44444444, 5],
           [12.44444444, 10],
           [12.5, 15],

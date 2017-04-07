@@ -18,8 +18,6 @@ describe('ScoreDetail', function() {
   describe('hash', function() {
     var hash = subject.hash();
     it('scores', function() {
-       console.log(hash);
-
        var h = {scores:[
             { category: 'reading', score: 20, max_score: 50, scaled_score: 125 },
             { category: 'listening', score: 20, max_score: 50, scaled_score: 155 } ],
