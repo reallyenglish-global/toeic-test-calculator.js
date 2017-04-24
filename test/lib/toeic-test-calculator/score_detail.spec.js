@@ -19,9 +19,9 @@ describe('ScoreDetail', function() {
     var hash = subject.hash();
     it('scores', function() {
        var h = {scores:[
-            { category: 'reading', score: 20, max_score: 50, scaled_score: 125 },
-            { category: 'listening', score: 20, max_score: 50, scaled_score: 155 } ],
-          total: { scaled_score: 280, band: "240-315" }
+            { category: 'reading', score: 20, max_score: 50, percentage: 40, scaled_score: 125 },
+            { category: 'listening', score: 20, max_score: 50, percentage: 40, scaled_score: 155 } ],
+           total: { scaled_score: 280, band: "240-315", percentage: 40 }
         };
 
        expect(hash).to.be.eql(h);
