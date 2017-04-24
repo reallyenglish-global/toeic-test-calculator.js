@@ -9,7 +9,7 @@ function teardown() {
 }
 
 var subject = new ScoreDetail({scores:[
-        {category:'reading', score:20, max_score:50},
+        {category:'reading', score:20, max_score:30},
         {category:'listening', score:20, max_score:50},
     ]});
 
@@ -19,9 +19,9 @@ describe('ScoreDetail', function() {
     var hash = subject.hash();
     it('scores', function() {
        var h = {scores:[
-            { category: 'reading', score: 20, max_score: 50, percentage: 40, scaled_score: 125 },
+            { category: 'reading', score: 20, max_score: 30, percentage: 67, scaled_score: 290 },
             { category: 'listening', score: 20, max_score: 50, percentage: 40, scaled_score: 155 } ],
-           total: { scaled_score: 280, band: "240-315", percentage: 40 }
+           total: { scaled_score: 445, band: "405-480", percentage: 54 }
         };
 
        expect(hash).to.be.eql(h);
