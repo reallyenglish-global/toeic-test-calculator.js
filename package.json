@@ -1,7 +1,7 @@
 {
   "name": "toeic-test-calculator.js",
   "main": "lib/toeic-test-calculator",
-  "version": "v0.1.1",
+  "version": "v0.2.0",
   "description": "Takes a TOEIC Test percentage an converts it into a TOEIC Test score for reading an listening tests.",
   "repository": {
     "type": "git",
