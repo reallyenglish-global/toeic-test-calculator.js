@@ -27,5 +27,15 @@ describe('ScoreDetail', function() {
        expect(hash).to.be.eql(h);
     });
   });
+
+  describe('score_table', function() {
+    it('output scores', function() {
+      var table = ScoreDetail.score_table();
+      console.log(table);
+      var total = table[0]['total'];
+      expect(table.length).to.be.eql(2601);
+      expect(table[0]['total']['band']).to.be.eql('10-45');
+    });
+  });
 });
 
